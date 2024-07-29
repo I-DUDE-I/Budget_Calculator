@@ -21,15 +21,8 @@
 
 </head>
 <body id="login">
-    <div class="main">
-        <div class="content">
-            <!-- <div class="empty"></div>
-            <div class="row">
-                <div class="col-6 login text-center p-0">
-                    <div class="login1">Login</div>
-                </div>
-                <div class="col-6 register text-center">Register</div>
-            </div> -->
+    <div class="main" id="main">
+        <div class="content" id="log">
             <div class="topBar1"></div>
             <div class="topBar">
                 <div class="div1"></div>
@@ -37,11 +30,16 @@
                     <div class="login">Login</div>
                 </div>
                 <div class="register1">
-                    <div class="register">Register</div>
+                    <div class="register" onclick="registerWindow()">Register</div>
                 </div>
                 <div class="div2"></div>
             </div>
             <div class="topBar2"></div>
+            <div class="form">
+                <input type="text" placeholder="Username" id="loginUsername">
+                <input type="password" placeholder="Password" id="loginPassword">
+                <button class="btn btn-outline-light" onclick="login()">Login</button>
+            </div>
         </div>
     </div>
 </body>

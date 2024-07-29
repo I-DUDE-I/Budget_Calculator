@@ -23,55 +23,21 @@
     overflow: hidden;
     box-shadow: 0px 4px 30px black;
 }
-/* #login .row{
-    color: white;
-    height: 12%;
-    font-size: 1.3vw;
-}
-#login .login, .register{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px red solid;
-}
-#login .register{
-    background-color:rgba(1, 0, 34, 0.6) ;
-    border-bottom-left-radius: 20px;
 
-}
-#login .empty{
-    height: 1%;
-    width: 100%;
-    background-color:rgba(1, 0, 34, 0.6) ;
-}
-#login .login1{
-    background-color: #0f2a47;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 95%;
-    margin-left: 5%;
-    height: 100%;
-}
-#login .login{
-    background-color:rgba(1, 0, 34, 0.6) ;
-} */
-
-#login .topBar{
+#login #log .topBar{
     height: 12%;
     width: 100%;
     display: flex;
 }
-#login .div1, .div2{
+#login #log .div1, .div2{
     background-color:rgba(1, 0, 34, 0.6) ;
     width: 2.5%;
     height: 100%;
-    /* border: 1px red solid; */
 }
-#login .login1, .register1 {
+#login #log .login1, .register1 {
     width: 47.5%;
-    /* border: 1px blue solid; */
 }
-#login .login, .register{
+#login #log .login, .register{
     width: 100%;
     height: 100%;
     display: flex;
@@ -80,28 +46,156 @@
     font-size: 1.3vw;
     color: white;
 }
-#login .register{
+#login #log .register{
     background-color:rgba(1, 0, 34, 0.6) ;
     border-bottom-left-radius: 20px;
+    cursor: pointer;
 }
-#login .div1{
+#login #log .div1{
     border-bottom-right-radius: 20px;
 }
-#login .login1{
+#login #log .login1{
     background-color:rgba(1, 0, 34, 0.6) ;
 }
-#login .login{
+#login #log .login{
     background-color: #0f2a47;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    cursor:default;
 }
-#login .topBar1{
+#login #log .topBar1{
     background-color:rgba(1, 0, 34, 0.6) ;
     height: 2%;
     width: 100%;
 }
-#login .topBar2{
+#login #log .topBar2{
     background-color: #0f2a4781;
     height: 2%;
     width: 100%;
+}
+#login #log .form{
+    width: 90%;
+    margin-left: 5%;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+#login #log input{
+    width: 80%;
+    border-radius: 100px;
+    height: 12%;
+    padding-left: 2vw;
+    font-size: 1vw;
+    background-color: rgba(150, 150, 255, 0.356);
+    color: white;
+}
+#login #log button{
+    border-radius: 100px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    width: 30%;
+    height: 12%;
+}
+#login #log input::placeholder{
+    color: rgb(202, 202, 202);
+}
+#login #log input:focus{
+    outline: none;
+}
+
+
+/* register */
+
+#login #reg .topBar{
+    height: 12%;
+    width: 100%;
+    display: flex;
+}
+#login #reg .div1{
+    background-color:rgba(1, 0, 34, 0.6) ;
+    width: 2.5%;
+    height: 100%;
+}
+#login #reg .div2{
+    background-color: #0f2a47;
+    width: 2.5%;
+    height: 100%;
+}
+#login #reg .login1, .register1 {
+    width: 47.5%;
+}
+#login #reg .login, .register{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    color: white;
+}
+#login #reg .login{
+    background-color:rgba(1, 0, 34, 0.6) ;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+#login #reg .div3{
+    background-color:rgba(1, 0, 34, 0.9) ;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+}
+#login #reg .register1{
+    background-color:rgba(1, 0, 34, 0.6) ;
+}
+#login #reg .register{
+    background-color: #0f2a47;
+    /* background-color: #05143f; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor:default;
+}
+#login #reg .topBar1{
+    background-color:rgba(1, 0, 34, 0.6) ;
+    height: 2%;
+    width: 100%;
+}
+#login #reg .topBar2{
+    background-color: #0f2a4781;
+    height: 2%;
+    width: 100%;
+}
+#login #reg .form{
+    width: 90%;
+    margin-left: 5%;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+}
+#login #reg input{
+    width: 80%;
+    border-radius: 100px;
+    height: 12%;
+    padding-left: 2vw;
+    font-size: 1vw;
+    background-color: rgba(150, 150, 255, 0.356);
+    color: white;
+}
+#login #reg button{
+    border-radius: 100px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    width: 30%;
+    height: 12%;
+}
+#login #reg input::placeholder{
+    color: rgb(202, 202, 202);
+}
+#login #reg input:focus{
+    outline: none;
 }
