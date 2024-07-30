@@ -1,5 +1,4 @@
 function registerWindow() {
-    console.log("registerWindow");
     main.innerHTML = `
     <div class="content" id="reg">
         <div class="topBar1"></div>
@@ -27,7 +26,6 @@ function registerWindow() {
 }
 
 function loginWindow() {
-    console.log("loginWindow");
     main.innerHTML = `
         <div class="content" id="log">
             <div class="topBar1"></div>
@@ -49,4 +47,32 @@ function loginWindow() {
             </div>
         </div>
     `
+}
+
+function register() {
+    if (document.getElementById("registerUsername").value == "" || document.getElementById("registerEmail").value == "" || document.getElementById("registerPassword").value == "") {
+        alert("Fill all the empty fields")
+    }
+    else {
+        localStorage.setItem("username",document.getElementById("registerUsername").value)
+        localStorage.setItem("email",document.getElementById("registerEmail").value)
+        localStorage.setItem("password",document.getElementById("registerPassword").value)
+        alert("User registered successfully")
+        document.getElementById("registerUsername").value = ""
+        document.getElementById("registerEmail").value = ""
+        document.getElementById("registerPassword").value = ""
+    }
+}
+
+function login() {
+    if (document.getElementById("loginUsername").value == "" || document.getElementById("loginPassword").value == "") {
+        alert("Fill all the empty fields")
+    }
+    else if(document.getElementById("loginUsername").value != localStorage.getItem("username") || document.getElementById("loginPassword").value != localStorage.getItem("password")) {
+        alert("Invalid user credentials")
+    }
+    else{
+        alert("success")
+    }
+    window.location = "./dashboard/index.html"
 }
