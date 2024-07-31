@@ -426,9 +426,6 @@
     color: white;
 }
 #dash .pibox{
-    width: 80%;
-    margin-left: 10%;
-    height: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -436,4 +433,12 @@
     backdrop-filter: blur(10px);
     padding: 2vw;
     box-shadow:0px 0px 10px #041e3a;
+    padding-bottom: 4vw;
+}
+#dash .piii{
+    display: flex;
+    justify-content: center;
+}
+#dash .piii label{
+    color: white;
 }

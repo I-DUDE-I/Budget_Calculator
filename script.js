@@ -176,7 +176,7 @@ function addIncome() {
     }
 }
 
-function addExpense(params) {
+function addExpense() {
     if (document.getElementById("expenseAmount").value == "" || document.getElementById("expenseType").value == "" ) {
         alert("Fill the empty fields")
     }
