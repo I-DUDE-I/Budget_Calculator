@@ -21,6 +21,171 @@
     <!-- pi chart -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
+    <style>
+        @media screen and (max-width:500px) {
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            #dash .navv{
+            font-size: 3vw;
+            }
+            #dash .navv button{
+                font-size: 2vw;
+            }
+            #dash .transfer{
+                width: 95%;
+                margin-left: 2.5%;
+                background-color: rgba(0, 0, 63, 0.25);
+                margin-top: 1vw;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2vw;
+                padding: 2vw 0;
+            }
+            #dash .income, .expense{
+                padding: 4vw 0vw;
+                width: 65%;
+                backdrop-filter: blur(10px);
+                box-shadow: 0px 0px 10px blue;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1vw;
+            }
+            #dash .box{
+                background-color: rgb(100, 200, 255);
+                color: rgb(0,0,0);
+                padding: 2vw;
+                border-radius: 0.5vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 3vw
+            }
+            #dash .add{
+                color: white;
+                font-size: 3vw;
+                margin-top: 3vw;
+            }
+            #dash .line{
+                width: 80%;
+                height: 1px;
+                background-color: white;
+            }
+            #dash .transfer input{
+                width: 80%;
+                margin-bottom: 1vw;
+                height: 4vw;
+                background-color: rgb(172, 178, 255);
+                background-color: #001450;
+                font-size: 2vw;
+                color: black;
+                color: white;
+            }
+            #dash .transfer input::placeholder{
+                color: grey;
+            }
+            #dash .transfer button{
+                width: 30%;
+                height: 4vw;
+                font-size: 2vw;
+                padding: 0;
+            }
+            #dash .clear{
+                width: 15%;
+                height: 4vw;
+                padding: 0;
+                font-size: 2vw;
+                margin-left: 42.5%;
+            }
+            #dash .tableHead{
+                font-size: 3vw;
+                margin-top: 5vw;
+                backdrop-filter: blur(10px);
+                background-color: #00145063;
+
+            }
+            #dash .line2{
+                width: 80%;
+                height: 1px;
+                background-color: white;
+                margin-left: 10%;
+                margin-bottom: 2vw;
+            }
+            #dash .table{
+                width: 80%;
+                margin-left: 10%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2vw;
+            }
+            #dash .table1{
+                width: 80%;
+                /* border: 1px red solid; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #dash .table .sp1{
+                color: white;
+                font-size: 2.5vw;
+                backdrop-filter: blur(10px);
+                width: 100%;
+                background-color: #00145063;
+            }
+            #dash table{
+                width: 100%;
+                text-align: center;
+                margin-top: 0.8vw;
+                background-color: rgba(0, 0, 0, 0);
+                font-size: 2vw;
+            }
+            #dash thead{
+                background-color: rgba(0, 0,0, 0);
+            }
+            #dash th{
+                background-color: rgba(7, 0, 100, 1);
+                backdrop-filter: blur(8px);
+                height: 3vw;
+                color: white;
+            }
+            #dash tbody{
+                background-color: rgba(0, 0,0, 0);
+            }
+            #dash td{
+                background-color: rgba(7, 0, 100, 0.4);
+                backdrop-filter: blur(8px);
+                height: 2.5vw;
+                color: white;
+            }
+            #dash .piButton{
+                font-size: 2vw;
+            }
+            #dash .pibox{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2vw;
+                backdrop-filter: blur(10px);
+                padding: 2vw;
+                box-shadow:0px 0px 10px #041e3a;
+                padding-bottom: 4vw;
+            }
+            #dash .piii{
+                display: flex;
+                justify-content: center;
+            }
+            #dash .piii label{
+                color: white;
+            }
+        }
+    </style>
+
 
 
 </head>
@@ -105,7 +270,7 @@
         <div class="line2"></div>
         <div class="piii">
             <div class="pibox" style="width:100%;max-width:700px">
-                <button class="btn btn-primary" onclick="pi()">Show Pi-Chart</button>
+                <button class="btn btn-primary piButton" onclick="pi()">Show Pi-Chart</button>
                 <canvas id="myChart" style="width:100%;max-width:600px;"></canvas>
             </div>
         </div>
